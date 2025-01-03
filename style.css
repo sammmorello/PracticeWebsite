@@ -12,15 +12,36 @@ header {
     text-align: center;
     padding: 1rem;
 }
+h2 {
+    background-color: #FF69B4;
+    color: white;
+    text-align: center;
+    padding: 1rem; 
+}
 
-button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    background-color: white;
-    color: #FF69B4;
-    border: 2px solid #FF69B4;
-    border-radius: 5px;
-    cursor: pointer;
+h3 {
+    margin-left: 50px; /* Moves the entire h2 block to the right */
+}
+
+p {
+    text-indent: 0; /* Indents the first line of the paragraph */
+    margin-left: 50px; /* Optional: Adds space to the entire paragraph */
+}
+
+/* Style the social links */
+#social-links {
+    margin-top: 10px; /* Adds space between the header and the links */
+}
+
+#social-links a {
+    text-decoration: none; /* Removes underline */
+    color: #4B0082; /* Blue color for links */
+    margin-right: 15px; /* Adds space between the links */
+    font-size: 16px; /* Adjust font size */
+}
+
+#social-links a:hover {
+    color: #4B0082; /* Darker blue on hover */
+    text-decoration: underline; /* Optional: underline on hover */
 }
 
