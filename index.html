@@ -3,28 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sammmorello &#128187</title>
+    <title>sammmorello ☕</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&family=Quicksand:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio!</h1>
-        <h2>Samantha Morello</h2>
-        <div id="social-links">
-            <a href="https://www.linkedin.com/in/samantha-morello-009947210/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/sammmorello" target="_blank">GitHub</a>
+    <div class="top-contact-bar" style="color:#6a4a5a;">
+        <a href="mailto:samanthaamorello@gmail.com" class="contact-link" style="color:#6a4a5a;font-weight:700;"><span style="font-size:1.2em;vertical-align:-0.1em;">💌</span> samanthaamorello@gmail.com</a>
+        <a href="https://www.linkedin.com/in/samantha-morello-009947210/" target="_blank" class="contact-link" style="color:#6a4a5a;font-weight:700;margin-left:2.2rem;"><span style="font-size:1.2em;vertical-align:-0.1em;">📚</span> LinkedIn</a>
+        <a href="https://github.com/sammmorello" target="_blank" class="contact-link" style="color:#6a4a5a;font-weight:700;margin-left:2.2rem;"><span style="font-size:1.2em;vertical-align:-0.1em;">💻</span> GitHub</a>
+    </div>
+    <header id="home" class="hero-section neutral" style="margin-top: 5.5rem;">
+        <div class="hero-flex elevated-hero">
+            <div class="profile-photo-container xlarge star-profile">
+                <img src="profile.jpg" alt="Samantha Ally Morello" class="profile-photo xlarge">
+            </div>
+            <div class="hero-bio-about right-bio">
+                <h1 class="hero-title" style="color:#b47a96;font-family:'Playfair Display',serif;font-size:4.2rem;font-weight:800;letter-spacing:1.5px;margin-bottom:1.1rem;text-shadow:none;text-align:left;">Samantha Ally Morello</h1>
+                <h2 class="hero-tagline" style="margin-bottom:0.5rem;color:#b47a96;font-family:'Quicksand','Inter',Arial,sans-serif;font-weight:600;">Data science enthusiast with a passion for creative analytics, real-world impact, and a love for coffee-fueled problem solving. <span class="coffee-emoji" style="font-size:1.7em;vertical-align:-0.15em;font-style:normal;">☕</span></h2>
+                <p class="about-inline hero-about-large" style="margin-top:0;display:flex;align-items:flex-start;gap:0.6rem;color:#6a4a5a;font-family:'Quicksand','Inter',Arial,sans-serif;font-size:1.08rem;font-weight:500;line-height:1.5;"><span style="font-size:1.3em;line-height:1.1;">⭐</span>Hi! I'm Samantha, and I graduated from Arizona State University in May 2025 with a B.S. in Data Science (Mathematics emphasis). I thrive on learning, building, and collaborating to make a positive impact through data. My strengths include analytical thinking, creative problem solving, and a passion for continuous growth.</p>
+            </div>
+        </div>
+        <div class="scroll-down-arrow" onclick="(function(){
+            var about = document.getElementById('about-education-header');
+            var rect = about.getBoundingClientRect();
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var top = rect.top + scrollTop;
+            window.scrollTo({top: top, behavior: 'smooth'});
+        })();" title="Scroll for more">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="22" fill="#f7eaea"/>
+                <path d="M14 20l8 8 8-8" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </header>
     <main>
-        <section>
-            <h3>Aspiring Data Scientist | 2025 Graduate</h3>
-            <p>My name is Samantha and I am currently pursuing a degree in Data Science with a focus in mathematics.<br>
-                I am so excited to be embarking on this journey to explore the world of data science and am very eager to<br>
-                apply my skills for internship and job opportunities.</p>
+        <div id="about-education-header" style="text-align:center;max-width:1000px;margin:0 auto 0.7rem auto;padding-top:5.5rem;scroll-margin-top:5.5rem;">
+            <h2 style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;letter-spacing:0.5px;color:#b47a96;text-align:center;margin-bottom:0.5rem;">About Me</h2>
+            <p style="font-family:'Quicksand','Inter',Arial,sans-serif;font-size:1.08rem;color:#6a4a5a;font-weight:500;max-width:900px;margin:0 auto;text-align:center;line-height:1.3;">A dedicated data science graduate with a passion for uncovering insights and solving complex problems through analytical thinking and innovative approaches.</p>
+        </div>
+        <section id="education" class="education-cards-section scroll-offset">
+            <div class="education-cards-flex">
+                <div class="education-card">
+                    <div class="education-card-header">
+                        <span class="education-card-icon">🎓</span>
+                        <span class="education-card-title recent">Arizona State University</span>
+                    </div>
+                    <div class="education-card-degree">Bachelor of Science in Data Science</div>
+                    <div class="education-card-details">
+                        <span class="education-card-location"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.5 11 9 11s9-5.75 9-11c0-4.97-4.03-9-9-9zm0 13.5c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5z" fill="#bfaeae"/></svg> Tempe, Arizona</span>
+                        <span class="education-card-date"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z" fill="#bfaeae"/></svg> Jan 2023 - May 2025 (Graduated)</span>
+                    </div>
+                    <div class="education-card-gpa recent">GPA: 3.8 Summa Cum Laude</div>
+                </div>
+                <div class="education-card">
+                    <div class="education-card-header">
+                        <span class="education-card-icon">🎓</span>
+                        <span class="education-card-title foundation">Mesa Community College</span>
+                    </div>
+                    <div class="education-card-degree">Associates of Science</div>
+                    <div class="education-card-details">
+                        <span class="education-card-location"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.5 11 9 11s9-5.75 9-11c0-4.97-4.03-9-9-9zm0 13.5c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5z" fill="#bfaeae"/></svg> Mesa, Arizona</span>
+                        <span class="education-card-date"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z" fill="#bfaeae"/></svg> Aug 2020 - Dec 2022</span>
+                    </div>
+                    <div class="education-card-gpa foundation">GPA: 3.6</div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects-cards-section">
+            <h2 class="projects-title" style="font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;letter-spacing:0.5px;color:#b47a96;text-align:center;margin-bottom:0.5rem;">Featured Projects</h2>
+            <p class="projects-desc" style="font-family:'Quicksand','Inter',Arial,sans-serif;font-size:1.08rem;color:#6a4a5a;font-weight:500;max-width:700px;margin:0 auto 3.5rem auto;text-align:center;line-height:1.3;">A showcase of my data science journey through academic and personal projects, demonstrating practical applications of machine learning and statistical analysis.</p>
+            <div class="projects-cards-flex projects-cards-grid" style="justify-content:center;align-items:center;margin:0 auto;max-width:1400px;">
+                <div class="project-card-bubble">
+                    <div class="project-card-header">
+                        <span class="project-card-icon" style="background:#f7eaea;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="project-card-date">Fall 2024</span>
+                        <span class="project-card-label">Data Science Capstone</span>
+                    </div>
+                    <div class="project-card-title">Optimizing Coffee Shop Sales with Predictive Modeling</div>
+                    <div class="project-card-desc">Comprehensive analysis of coffee shop sales data using machine learning techniques to forecast revenue and optimize business operations.</div>
+                    <div class="project-card-highlights">
+                        <strong>Project Highlights:</strong>
+                        <ul>
+                            <li>Sales Forecasting using advanced regression models</li>
+                            <li>Decision Tree and Random Forest implementation</li>
+                            <li>Feature Engineering for improved model performance</li>
+                            <li>Interactive Tool Development for business insights</li>
+                            <li>Data Visualization with compelling business reports</li>
+                            <li>Strategic Business Insights and recommendations</li>
+                        </ul>
+                    </div>
+                    <div class="project-card-tech">
+                        <strong>Technologies Used:</strong>
+                        <div class="project-card-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Visualization</span>
+                            <span>Business Analytics</span>
+                        </div>
+                    </div>
+                    <a class="project-card-details-btn" href="#" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7m-1.5-5.5L10 16l-4 4-5-5 4-4L20.5 4.5z" stroke="#e6b6c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> View Project Details</a>
+                </div>
+                <div class="project-card-bubble">
+                    <div class="project-card-header">
+                        <span class="project-card-icon" style="background:#f7eaea;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 7h14M5 12h14M5 17h14" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="project-card-date">Spring 2024</span>
+                        <span class="project-card-label">Machine Learning in Data Science</span>
+                    </div>
+                    <div class="project-card-title">NBA Player Classification with Machine Learning</div>
+                    <div class="project-card-desc">Advanced classification system using multiple machine learning algorithms to predict NBA player performance categories and positions.</div>
+                    <div class="project-card-highlights">
+                        <strong>Project Highlights:</strong>
+                        <ul>
+                            <li>Sports Analytics with comprehensive player data</li>
+                            <li>Naive Bayes classification implementation</li>
+                            <li>Decision Tree and Random Forest models</li>
+                            <li>SMOTE Balancing for improved accuracy</li>
+                            <li>Feature Selection and model optimization</li>
+                            <li>Model Evaluation with detailed performance metrics</li>
+                        </ul>
+                    </div>
+                    <div class="project-card-tech">
+                        <strong>Technologies Used:</strong>
+                        <div class="project-card-tags">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Sports Analytics</span>
+                            <span>Classification</span>
+                        </div>
+                    </div>
+                    <a class="project-card-details-btn" href="#" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7m-1.5-5.5L10 16l-4 4-5-5 4-4L20.5 4.5z" stroke="#e6b6c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> View Project Details</a>
+                </div>
+                <div class="project-card-bubble">
+                    <div class="project-card-header">
+                        <span class="project-card-icon" style="background:#fff3f7;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13h8M8 9h8M8 17h8" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+                        <span class="project-card-date">Spring 2024</span>
+                        <span class="project-card-label">Applied Regression</span>
+                    </div>
+                    <div class="project-card-title">Team Wins for Chicago Cubs with Multiple Regression</div>
+                    <div class="project-card-desc">Statistical analysis of Chicago Cubs performance using multiple regression techniques to identify key factors influencing team success.</div>
+                    <div class="project-card-highlights">
+                        <strong>Project Highlights:</strong>
+                        <ul>
+                            <li>Regression Modeling with comprehensive team statistics</li>
+                            <li>Statistical Testing and hypothesis validation</li>
+                            <li>Exploratory Data Analysis of historical data</li>
+                            <li>Model Evaluation with rigorous statistical methods</li>
+                        </ul>
+                    </div>
+                    <div class="project-card-tech">
+                        <strong>Technologies Used:</strong>
+                        <div class="project-card-tags">
+                            <span>SAS</span>
+                            <span>Statistical Modeling</span>
+                            <span>Sports Analytics</span>
+                            <span>Regression Analysis</span>
+                        </div>
+                    </div>
+                    <a class="project-card-details-btn" href="#" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7m-1.5-5.5L10 16l-4 4-5-5 4-4L20.5 4.5z" stroke="#e6b6c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> View Project Details</a>
+                </div>
+                <div class="project-card-bubble">
+                    <div class="project-card-header">
+                        <span class="project-card-icon" style="background:#fff3f7;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 21C16.4183 21 20 17.4183 20 13C20 8.58172 16.4183 5 12 5C7.58172 5 4 8.58172 4 13C4 17.4183 7.58172 21 12 21Z" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8V13L15 15" stroke="#e6b6c5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="project-card-date">Spring 2025</span>
+                        <span class="project-card-label">Personal Project</span>
+                    </div>
+                    <div class="project-card-title">Cycle Tracking & Temperature Analysis Using Personal Health Data</div>
+                    <div class="project-card-desc">Innovative personal health analytics project analyzing menstrual cycle patterns and temperature variations for health insights.</div>
+                    <div class="project-card-highlights">
+                        <strong>Project Highlights:</strong>
+                        <ul>
+                            <li>Personal Health Analytics with sensitive data handling</li>
+                            <li>PostgreSQL database design and management</li>
+                            <li>SQLAlchemy for robust data operations</li>
+                            <li>Exploratory Data Analysis of biological patterns</li>
+                            <li>Time Series Trends analysis</li>
+                            <li>Personal Health Analytics dashboard</li>
+                        </ul>
+                    </div>
+                    <div class="project-card-tech">
+                        <strong>Technologies Used:</strong>
+                        <div class="project-card-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Health Analytics</span>
+                            <span>Time Series</span>
+                        </div>
+                    </div>
+                    <a class="project-card-details-btn" href="#" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7m-1.5-5.5L10 16l-4 4-5-5 4-4L20.5 4.5z" stroke="#e6b6c5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> View Project Details</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills-education" class="page-section hue-bg skills-edu-section">
         </section>
     </main>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
