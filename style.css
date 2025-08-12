@@ -1542,4 +1542,139 @@ main {
   }
 }
 
+/* Soft cloud-style popup for 'Oops, not yet!' message */
+.project-popup-cloud {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(247, 234, 234, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeInCloud 0.22s cubic-bezier(.4,0,.2,1);
+}
+.project-popup-cloud[style*="display: flex"] {
+  display: flex !important;
+}
+.project-popup-content {
+  background: linear-gradient(180deg, #fff9fa 80%, #f7eaea 100%);
+  border-radius: 38px 38px 32px 32px/38px 38px 32px 32px;
+  box-shadow: 0 8px 40px 0 #e6b6c555, 0 2px 16px #b6cdbd33;
+  border: 2px solid #f3e3e9;
+  padding: 2.5rem 2.7rem 2.2rem 2.7rem;
+  min-width: 260px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  position: relative;
+  animation: fadeInCloud 0.22s cubic-bezier(.4,0,.2,1);
+}
+.project-popup-emoji {
+  font-size: 2.7rem;
+  margin-bottom: 0.2rem;
+}
+.project-popup-text {
+  font-family: 'Quicksand','Inter',Arial,sans-serif;
+  font-size: 1.35rem;
+  color: #b47a96;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.project-popup-close {
+  background: #f3e3e9;
+  color: #b47a96;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Quicksand','Inter',Arial,sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  padding: 0.7em 1.7em;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #e6b6c522;
+  transition: background 0.18s, color 0.18s;
+}
+.project-popup-close:hover {
+  background: #e6b6c5;
+  color: #fff;
+}
+@keyframes fadeInCloud {
+  from { opacity: 0; transform: translateY(-18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 700px) {
+  .project-popup-content {
+    padding: 1.3rem 1.1rem 1.1rem 1.1rem;
+    min-width: 160px;
+    font-size: 1.01rem;
+  }
+}
+
+/* Fading 'Oops not yet!' message next to project button */
+.project-oops-message {
+  display: inline-block;
+  margin-left: 1.1em;
+  font-size: 1.01rem;
+  color: #b47a96;
+  font-family: 'Quicksand','Inter',Arial,sans-serif;
+  font-weight: 700;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+  vertical-align: middle;
+}
+.project-oops-message.show {
+  opacity: 1;
+  animation: fadeOops 2.2s cubic-bezier(.4,0,.2,1) 0s 1;
+}
+@keyframes fadeOops {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.project-oops-bubble {
+  position: absolute;
+  z-index: 9999;
+  min-width: 120px;
+  max-width: 220px;
+  background: linear-gradient(180deg, #fff9fa 80%, #f7eaea 100%);
+  color: #b47a96;
+  font-family: 'Quicksand','Inter',Arial,sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  border-radius: 22px 22px 18px 18px/22px 22px 18px 18px;
+  box-shadow: 0 8px 32px #e6b6c555, 0 2px 16px #b6cdbd33;
+  border: 1.5px solid #f3e3e9;
+  padding: 0.7em 1.3em;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+  white-space: nowrap;
+}
+.project-oops-bubble.show {
+  opacity: 1;
+  animation: fadeOopsBubble 1.8s cubic-bezier(.4,0,.2,1) 0s 1;
+}
+@keyframes fadeOopsBubble {
+  0% { opacity: 0; transform: translateY(10px) scale(0.95); }
+  10% { opacity: 1; transform: translateY(0) scale(1); }
+  80% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-10px) scale(0.95); }
+}
+@media (max-width: 700px) {
+  .project-oops-bubble {
+    font-size: 0.98rem;
+    min-width: 90px;
+    padding: 0.5em 0.7em;
+  }
+}
+
 
