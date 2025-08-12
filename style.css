@@ -680,7 +680,7 @@ main {
     letter-spacing: 0.01em;
     font-weight: 500;
 }
-/* Education Cards Section - Match Screenshot Style */
+/* Education Cards Section */
 .education-cards-section {
     width: 100%;
     max-width: 1400px;
@@ -705,15 +705,15 @@ main {
     border-radius: 28px;
     box-shadow: 0 0 32px 8px #f7eaea33, 0 2px 16px #b6cdbd22;
     border: 1.5px solid #f3e3e9;
-    padding: 2.7rem 2.5rem 2.2rem 2.5rem;
-    min-width: 340px;
+    padding: 1.2rem 1rem;
+    min-width: auto;
     max-width: 480px;
-    flex: 1 1 380px;
+    flex: 1 1 100%; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     transition: box-shadow 0.2s, transform 0.2s;
-    font-size: 0.93rem;
+    font-size: 0.85rem;
     position: relative;
 }
 .education-card-header {
@@ -1798,20 +1798,13 @@ main {
     min-height: unset !important;
   }
   .profile-photo-container.xlarge.star-profile {
-    min-width: 180px !important;
-    height: 220px !important;
-    margin-top: 0 !important;
-    display: flex !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
+    min-width: 240px !important;
+    height: 290px !important;
   }
   .profile-photo.xlarge {
-    width: 180px !important;
-    height: 220px !important;
-    object-fit: cover !important;
-    border-radius: 22px !important;
-    box-shadow: 0 4px 20px 0 #b6cdbd33 !important;
-    margin: 0 !important;
+    width: 240px !important;
+    height: 290px !important;
+    border-radius: 28px !important;
   }
 }
 
