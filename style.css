@@ -1502,7 +1502,7 @@ main {
   box-shadow: 0 8px 32px #e6b6c555, 0 2px 16px #b6cdbd33;
   border: 1.5px solid #f3e3e9;
   z-index: 100;
-  padding: 1.1rem 1.2rem 1.1rem 1.2rem;
+  padding: 1.1rem 1.2rem 1.1rem 2.7rem;
   gap: 1.1rem;
   animation: fadeInDropdown 0.22s cubic-bezier(.4,0,.2,1);
 }
@@ -1674,6 +1674,89 @@ main {
     font-size: 0.98rem;
     min-width: 90px;
     padding: 0.5em 0.7em;
+  }
+}
+
+/* Make all text inside bubbles smaller and make bubbles themselves smaller for mobile only */
+@media (max-width: 700px) {
+  .project-card-bubble,
+  .education-card,
+  .coursework-card,
+  .contact-card,
+  .opportunities-card {
+    font-size: 0.97rem !important;
+    padding: 0.9rem 0.7rem 0.9rem 0.7rem !important;
+    max-width: 370px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0.7rem auto 1.2rem auto !important;
+    border-radius: 16px !important;
+    box-sizing: border-box !important;
+  }
+  .project-card-title, .education-card-title, .coursework-title, .contact-card-title, .opportunities-card-title {
+    font-size: 1.13rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+  .project-card-header, .education-card-header {
+    font-size: 0.97rem !important;
+    gap: 0.4rem !important;
+  }
+  .project-card-tags span, .education-card-location, .education-card-date {
+    font-size: 0.93rem !important;
+    padding: 0.13em 0.7em !important;
+  }
+  .project-card-details-btn, .bubble-btn, .outline-btn {
+    font-size: 1.01rem !important;
+    padding: 0.7rem 0.3rem !important;
+  }
+  .coursework-list, .project-card-highlights, .education-card-details, .contact-info-label, .contact-info-value, .opportunities-description {
+    font-size: 0.93rem !important;
+  }
+}
+@media (max-width: 700px) {
+  .contact-info-row {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.7rem !important;
+    margin-bottom: 1.1rem !important;
+  }
+  .contact-icon {
+    min-width: 38px !important;
+    max-width: 38px !important;
+    width: 38px !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    margin-top: 0 !important;
+  }
+  .contact-info-text {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .contact-info-label {
+    font-size: 0.93rem !important;
+    font-weight: 700 !important;
+    color: #2d1b23 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0.3rem !important;
+    white-space: nowrap !important;
+  }
+  .contact-info-value {
+    font-size: 1.01rem !important;
+    color: #8d7a86 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    word-break: break-all !important;
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
