@@ -1213,4 +1213,35 @@ main {
     }
 }
 
+/* Reduce spacing between Let's Connect and Open to Opportunities */
+.contact-cards-flex {
+  gap: 1.2rem !important;
+}
+/* Increase spacing between Open to Opportunities and footer */
+.opportunities-bubble-wrapper {
+  margin-top: 2rem !important;
+  margin-bottom: 3.5rem !important;
+}
+/* Ensure both buttons in Open to Opportunities match color scheme */
+.connect-buttons .bubble-btn.outline-btn {
+  background: #fff !important;
+  color: #b47a96 !important;
+  border: 2px solid #d3a9bb !important;
+}
+.connect-buttons .bubble-btn.outline-btn:hover {
+  background: #f7eaea !important;
+  color: #fff !important;
+}
+.connect-buttons .bubble-btn {
+  font-family: 'Quicksand','Inter',Arial,sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 18px;
+  transition: background 0.3s, color 0.3s;
+}
+/* More space below the footer text */
+.site-footer {
+  margin-bottom: 3.5rem !important;
+}
+
 
