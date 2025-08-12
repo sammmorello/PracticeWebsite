@@ -418,6 +418,50 @@ main {
     border-bottom: 2px solid #bfcab3;
     background: none;
 }
+.top-contact-bar-bubble {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin: 0;
+  padding: 1.2rem 0 0.7rem 0;
+}
+.top-contact-bar {
+  background: var(--color-card);
+  border-radius: 22px;
+  box-shadow: 0 8px 40px 0 #e6b6c522;
+  border: 1.5px solid #f3e3e9;
+  padding: 0.7rem 2.2rem;
+  min-width: 320px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+}
+.top-contact-bar .contact-link {
+  color: #6a4a5a;
+  font-weight: 700;
+  font-family: 'Quicksand','Inter',Arial,sans-serif;
+  font-size: 1.13rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.top-contact-bar .contact-link:hover {
+  color: #b47a96;
+}
+@media (max-width: 700px) {
+  .top-contact-bar {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 0.7rem;
+    min-width: 0;
+    max-width: 98vw;
+  }
+}
 .opportunities-section {
     background: #f7f5f3;
     padding: 4.5rem 0 4.5rem 0;
