@@ -732,29 +732,55 @@ main {
     }
 }
 @media (max-width: 900px) {
-    .opportunities-title {
-        font-size: 2rem;
-    }
-    .opportunities-desc {
-        font-size: 1.08rem;
-        padding: 0 1rem;
-    }
-    .hero-centered-title {
-        font-size: 2rem;
-    }
-    .hero-centered-subtitle {
-        font-size: 1.08rem;
-        padding: 0 1rem;
-    }
-    .hero-centered-links {
-        gap: 1.2rem;
-    }
-    .footer-links-green {
-        gap: 1.2rem;
-    }
-    .footer-copy-green {
-        font-size: 1.1rem;
-    }
+  .hero-flex.elevated-hero {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    padding: 2rem 0.5rem 1.5rem 0.5rem !important;
+    min-height: unset !important;
+  }
+  .profile-photo-container.xlarge.star-profile {
+    min-width: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem !important;
+  }
+  .profile-photo.xlarge {
+    width: 70vw !important;
+    max-width: 260px !important;
+    height: auto !important;
+    min-width: 120px !important;
+    min-height: 120px !important;
+    border-radius: 22px !important;
+  }
+  .hero-bio-about.right-bio {
+    max-width: 98vw !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: unset !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0 0.5rem !important;
+  }
+  .hero-title {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .hero-tagline {
+    font-size: 1.05rem !important;
+    text-align: center !important;
+  }
+  .about-inline.hero-about-large {
+    font-size: 0.98rem !important;
+    text-align: center !important;
+    flex-direction: column !important;
+    gap: 0.3rem !important;
+    align-items: center !important;
+    margin: 0.5rem 0 0 0 !important;
+  }
 }
 @media (max-width: 900px) {
     .top-contact-bar .contact-bar-fade,
