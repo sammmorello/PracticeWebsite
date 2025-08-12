@@ -1141,6 +1141,33 @@ main {
         align-items: center;
     }
 }
+@media (max-width: 900px) {
+  .projects-cards-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    max-width: 98vw !important;
+    width: 100% !important;
+  }
+  .project-card-bubble {
+    max-width: 98vw !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0 0 2rem 0 !important;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem !important;
+    min-height: unset !important;
+  }
+}
+@media (max-width: 600px) {
+  .project-card-bubble {
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem !important;
+    font-size: 0.97rem !important;
+  }
+  .projects-title {
+    font-size: 1.3rem !important;
+  }
+}
 
 /* Neutral color palette for all bubbles and sections */
 :root {
