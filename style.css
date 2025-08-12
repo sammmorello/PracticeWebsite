@@ -443,6 +443,18 @@ main {
   gap: 2.2rem;
 }
 .top-contact-bar .contact-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.3em !important;
+  vertical-align: middle !important;
+  line-height: 1.2 !important;
+}
+.top-contact-bar .contact-link span {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  line-height: 1.2 !important;
+}
+.top-contact-bar .contact-link {
   color: #6a4a5a;
   font-weight: 700;
   font-family: 'Quicksand','Inter',Arial,sans-serif;
@@ -452,6 +464,36 @@ main {
 }
 .top-contact-bar .contact-link:hover {
   color: #b47a96;
+}
+@media (max-width: 700px) {
+  body {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+  main, .site-footer, .top-contact-bar-bubble, .opportunities-bubble-wrapper, .education-cards-section, .coursework-section, .projects-cards-section, .contact-section {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+  .education-card, .project-card-bubble, .contact-card, .coursework-card, .opportunities-card {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    min-width: 0 !important;
+  }
+  .top-contact-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.7rem !important;
+    padding: 0.5rem 0.3rem !important;
+    min-width: 0 !important;
+    max-width: 98vw !important;
+  }
+  .top-contact-bar .contact-link {
+    font-size: 0.98rem !important;
+    padding: 0.2rem 0.5rem !important;
+    margin: 0 !important;
+  }
 }
 @media (max-width: 700px) {
   html, body {
@@ -1385,6 +1427,27 @@ main {
 /* More space below the footer text */
 .site-footer {
   margin-bottom: 3.5rem !important;
+}
+
+/* Remove hamburger menu and dropdown styles */
+.hamburger-menu, .mobile-contact-menu { display: none !important; }
+
+@media (max-width: 700px) {
+  .top-contact-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.7rem !important;
+    padding: 0.5rem 0.3rem !important;
+    min-width: 0 !important;
+    max-width: 98vw !important;
+  }
+  .top-contact-bar .contact-link {
+    font-size: 0.98rem !important;
+    padding: 0.2rem 0.5rem !important;
+    margin: 0 !important;
+  }
 }
 
 
