@@ -454,12 +454,58 @@ main {
   color: #b47a96;
 }
 @media (max-width: 700px) {
-  .top-contact-bar {
-    flex-direction: column;
-    gap: 0.7rem;
-    padding: 0.7rem 0.7rem;
-    min-width: 0;
-    max-width: 98vw;
+  html, body {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    touch-action: pan-y !important;
+  }
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  main, .site-footer, .top-contact-bar-bubble, .opportunities-bubble-wrapper, .education-cards-section, .coursework-section, .projects-cards-section, .contact-section {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .hero-title, .hero-tagline, .about-inline.hero-about-large, .projects-title, .projects-desc, .coursework-title, .footer-title, .footer-desc {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .education-cards-flex, .projects-cards-grid, .contact-cards-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100vw !important;
+    gap: 1.2rem !important;
+  }
+  .education-card, .project-card-bubble, .contact-card, .coursework-card, .opportunities-card {
+    max-width: 98vw !important;
+    min-width: 0 !important;
+    width: 98vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+  .profile-photo.xlarge {
+    width: 60vw !important;
+    max-width: 180px !important;
+    min-width: 90px !important;
+    height: auto !important;
+    border-radius: 18px !important;
+  }
+  .scroll-down-arrow {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 }
 .opportunities-section {
