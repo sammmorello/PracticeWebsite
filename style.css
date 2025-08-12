@@ -23,7 +23,12 @@ body, html {
     font-family: 'Quicksand', 'Montserrat', 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--color-bg);
+    background: linear-gradient(180deg, #f8fafb 0%, #f7eaea 100%) fixed, 
+                radial-gradient(ellipse at 20% 20%, #f7eaea88 0%, transparent 70%) fixed,
+                radial-gradient(ellipse at 80% 10%, #f3e3e988 0%, transparent 70%) fixed,
+                radial-gradient(ellipse at 60% 80%, #e6b6c522 0%, transparent 80%) fixed,
+                radial-gradient(ellipse at 10% 70%, #fff9fa99 0%, transparent 80%) fixed;
+    background-blend-mode: lighten, lighten, lighten, lighten, normal;
     color: var(--color-text);
     min-height: 100vh;
     scroll-behavior: smooth;
