@@ -1785,5 +1785,34 @@ main {
     padding: 0 !important;
   }
 }
+@media (max-width: 700px) {
+  .hero-section.neutral {
+    margin-top: 1.5rem !important;
+    min-height: unset !important;
+    padding-top: 0 !important;
+  }
+  .hero-flex.elevated-hero {
+    padding-top: 0.5rem !important;
+    padding-bottom: 1.2rem !important;
+    gap: 2.2rem !important;
+    min-height: unset !important;
+  }
+  .profile-photo-container.xlarge.star-profile {
+    min-width: 180px !important;
+    height: 220px !important;
+    margin-top: 0 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+  .profile-photo.xlarge {
+    width: 180px !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 22px !important;
+    box-shadow: 0 4px 20px 0 #b6cdbd33 !important;
+    margin: 0 !important;
+  }
+}
 
 
