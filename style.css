@@ -1558,13 +1558,17 @@ main {
 }
 @media (max-width: 700px) {
   .topbar-hamburger-dropdown {
-    right: 0.2rem;
-    min-width: 170px;
-    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
-    font-size: 0.98rem;
+    min-width: 270px !important;
+    max-width: 95vw !important;
+    word-break: normal !important;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem !important;
   }
-  .topbar-hamburger-btn {
-    padding: 0.2rem 0.7rem 0.2rem 0.2rem;
+  .topbar-hamburger-dropdown a.contact-link {
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+    text-overflow: ellipsis !important;
+    display: block !important;
+    max-width: 100% !important;
   }
 }
 
